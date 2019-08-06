@@ -3,7 +3,7 @@ pipeline {
     disableConcurrentBuilds()
   }
   agent {
-    label "jenkins-maven"
+    label "jenkins-jx-base"
   }
   environment {
     DEPLOY_NAMESPACE = "jx-staging"
@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Validate Environment') {
       steps {
-        container('maven') {
+        container('jx-base') {
           dir('env') {
             sh 'jx step helm build'
           }
@@ -23,7 +23,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        container('maven') {
+        container('jx-base') {
           dir('env') {
             sh 'jx step helm apply'
           }
