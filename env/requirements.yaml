@@ -15,4 +15,4 @@ dependencies:
   version: 0.0.80
 - name: priluxwebui
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.438
+  version: 0.0.439
