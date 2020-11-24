@@ -1,4 +1,7 @@
 PipelineSecrets: {}
+mqttserver:
+  env:
+    FeatureToggling__CoraAlertCreatedEventHandler: true
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
