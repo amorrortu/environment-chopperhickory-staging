@@ -13,6 +13,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
+            sh "helm init --client-only --stable-repo-url https://charts.helm.sh/stable"
             sh 'jx step helm build'
           }
         }
@@ -25,6 +26,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
+            sh "helm init --client-only --stable-repo-url https://charts.helm.sh/stable"
             sh 'jx step helm apply'
           }
         }
