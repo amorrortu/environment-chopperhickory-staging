@@ -2,6 +2,9 @@ PipelineSecrets: {}
 mqttserver:
   env:
     MqttJobProcessor_FeatureToggling__CoraAlertCreatedEventHandler: true
+    MqttJobProcessor_FeatureToggling__UserCreationRequestedEventHandler: true
+    MqttJobProcessor_FeatureToggling__UserCreationConfirmedEventHandler: true
+    MqttJobProcessor_FeatureToggling__UserCreationRejectedEventHandler: true
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
