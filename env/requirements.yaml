@@ -9,7 +9,7 @@ dependencies:
   version: 2.3.118
 - name: mqttserver
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.239
+  version: 0.0.240
 - name: priluxswiftlibrary
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.107
