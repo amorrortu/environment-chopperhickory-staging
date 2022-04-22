@@ -9,7 +9,7 @@ dependencies:
   version: 2.3.118
 - name: mqttserver
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.302
+  version: 0.0.303
 - name: prilux-vial-ui
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.68
