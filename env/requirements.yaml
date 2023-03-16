@@ -15,7 +15,7 @@ dependencies:
   version: 0.0.86
 - name: priluxswiftlibrary
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.153
+  version: 0.0.154
 - name: priluxwebui
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.947
